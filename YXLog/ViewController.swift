@@ -12,14 +12,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        YXLog.log;
     }
 
     @IBAction private func showLogView(_ sender: UISwitch) {
         if sender.isOn {
-            YXLog.log.show()
+            YXLog.log.start(view)
         } else {
-            YXLog.log.dismiss()
+            YXLog.log.end()
         }
     }
     

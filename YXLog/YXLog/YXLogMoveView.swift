@@ -10,6 +10,23 @@ import UIKit
 class YXLogMoveView: UIView {
 
     private var beginPoint = CGPoint.zero
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        layer.cornerRadius = 5
+        backgroundColor = UIColor.gray
+        
+//        let imageView = UIImageView(frame: bounds)
+//        imageView.contentMode = .center
+//        imageView.image = #imageLiteral(resourceName: "setting")
+//        addSubview(imageView)
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(settingAction))
+        addGestureRecognizer(tap)
+    }
+    
+    @objc private func settingAction() {
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "YXMOVEVIEWACTION"), object: nil, userInfo: nil)
+    }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         beginPoint = (touches.first?.location(in: self))!
@@ -49,5 +66,9 @@ class YXLogMoveView: UIView {
         UIView.animate(withDuration: 0.2) {
             self.frame = rect
         }
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 }

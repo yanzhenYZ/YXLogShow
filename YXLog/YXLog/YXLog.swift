@@ -11,8 +11,12 @@ class YXLog: NSObject {
 
     public static let log = YXLog()
     private var logView: YXLogView!
-    
+    private var moveView: YXLogMoveView!
+    private weak var superView: UIView?
     private override init() {
+        moveView = YXLogMoveView(frame: CGRect(x: 10, y: 10, width: 65, height: 65))
+        moveView.backgroundColor = .gray
+        
         logView = YXLogView(frame: .zero)
         logView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         logView.layer.cornerRadius = 5
@@ -21,10 +25,20 @@ class YXLog: NSObject {
 }
 
 extension YXLog {
-    func show(_ frame: CGRect = CGRect(x: 0, y: 0, width: 180, height: 240)) {
-        dismiss()
-        logView.frame = frame
-        UIApplication.shared.keyWindow?.addSubview(logView)
+    func start(_ view: UIView?) {
+        end()
+        if view != nil {
+            superView = view
+        } else {
+            superView = UIApplication.shared.keyWindow
+        }
+        superView?.addSubview(moveView)
+    }
+    
+    func end() {
+        superView = nil
+        logView.removeFromSuperview()
+        moveView.removeFromSuperview()
     }
     
     func dismiss() {

@@ -13,6 +13,8 @@
 		9B339F4625FCB9C200BC8FCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B339F4525FCB9C200BC8FCA /* Assets.xcassets */; };
 		9B339F4925FCB9C200BC8FCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B339F4725FCB9C200BC8FCA /* LaunchScreen.storyboard */; };
 		9B339F5725FCBA4500BC8FCA /* YXLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B339F5625FCBA4500BC8FCA /* YXLog.swift */; };
+		9B339F5D25FCBCFB00BC8FCA /* YXLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B339F5C25FCBCFB00BC8FCA /* YXLogView.swift */; };
+		9B339F6025FCBEE800BC8FCA /* YXLogMoveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B339F5F25FCBEE800BC8FCA /* YXLogMoveView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		9B339F4825FCB9C200BC8FCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B339F4A25FCB9C200BC8FCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B339F5625FCBA4500BC8FCA /* YXLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXLog.swift; sourceTree = "<group>"; };
+		9B339F5C25FCBCFB00BC8FCA /* YXLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXLogView.swift; sourceTree = "<group>"; };
+		9B339F5F25FCBEE800BC8FCA /* YXLogMoveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXLogMoveView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +60,9 @@
 		9B339F3B25FCB9C000BC8FCA /* YXLog */ = {
 			isa = PBXGroup;
 			children = (
-				9B339F5525FCBA3500BC8FCA /* YXLog */,
 				9B339F3C25FCB9C000BC8FCA /* AppDelegate.swift */,
 				9B339F4025FCB9C000BC8FCA /* ViewController.swift */,
+				9B339F5525FCBA3500BC8FCA /* YXLog */,
 				9B339F4225FCB9C000BC8FCA /* Main.storyboard */,
 				9B339F4525FCB9C200BC8FCA /* Assets.xcassets */,
 				9B339F4725FCB9C200BC8FCA /* LaunchScreen.storyboard */,
@@ -71,6 +75,8 @@
 			isa = PBXGroup;
 			children = (
 				9B339F5625FCBA4500BC8FCA /* YXLog.swift */,
+				9B339F5C25FCBCFB00BC8FCA /* YXLogView.swift */,
+				9B339F5F25FCBEE800BC8FCA /* YXLogMoveView.swift */,
 			);
 			path = YXLog;
 			sourceTree = "<group>";
@@ -145,6 +151,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B339F5D25FCBCFB00BC8FCA /* YXLogView.swift in Sources */,
+				9B339F6025FCBEE800BC8FCA /* YXLogMoveView.swift in Sources */,
 				9B339F4125FCB9C000BC8FCA /* ViewController.swift in Sources */,
 				9B339F3D25FCB9C000BC8FCA /* AppDelegate.swift in Sources */,
 				9B339F5725FCBA4500BC8FCA /* YXLog.swift in Sources */,

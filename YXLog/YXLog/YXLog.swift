@@ -29,7 +29,14 @@ class YXLog: NSObject {
             }
         }
         
-        logView = YXLogView(frame: .init(x: 0, y: 0, width: 240, height: 320))
+        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "YXLOGVIEWCLOSE"), object: nil, queue: .main) { [weak self] (note) in
+            guard let self = self else { return }
+            self.logView.removeFromSuperview()
+            self.moveView.isHidden = false
+        }
+        
+        logView = Bundle.main.loadNibNamed("YXLogView", owner: nil, options: nil)?.first as? YXLogView
+        logView.frame = CGRect(x: 0, y: 0, width: 270, height: 360)
         logView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         logView.layer.cornerRadius = 5
         logView.backgroundColor = .gray

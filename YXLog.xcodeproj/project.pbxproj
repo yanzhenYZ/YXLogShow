@@ -17,6 +17,8 @@
 		9B339F6025FCBEE800BC8FCA /* YXLogMoveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B339F5F25FCBEE800BC8FCA /* YXLogMoveView.swift */; };
 		9B339F6325FCC0D700BC8FCA /* YXLogView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B339F6225FCC0D700BC8FCA /* YXLogView.xib */; };
 		9B339F6A25FCC88100BC8FCA /* YXMoveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B339F6925FCC88100BC8FCA /* YXMoveView.swift */; };
+		9B339F7325FCD86F00BC8FCA /* YXLogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B339F7125FCD86F00BC8FCA /* YXLogCell.swift */; };
+		9B339F7425FCD86F00BC8FCA /* YXLogCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B339F7225FCD86F00BC8FCA /* YXLogCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		9B339F5F25FCBEE800BC8FCA /* YXLogMoveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXLogMoveView.swift; sourceTree = "<group>"; };
 		9B339F6225FCC0D700BC8FCA /* YXLogView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YXLogView.xib; sourceTree = "<group>"; };
 		9B339F6925FCC88100BC8FCA /* YXMoveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXMoveView.swift; sourceTree = "<group>"; };
+		9B339F7125FCD86F00BC8FCA /* YXLogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXLogCell.swift; sourceTree = "<group>"; };
+		9B339F7225FCD86F00BC8FCA /* YXLogCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YXLogCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				9B339F6225FCC0D700BC8FCA /* YXLogView.xib */,
 				9B339F6925FCC88100BC8FCA /* YXMoveView.swift */,
 				9B339F5F25FCBEE800BC8FCA /* YXLogMoveView.swift */,
+				9B339F7125FCD86F00BC8FCA /* YXLogCell.swift */,
+				9B339F7225FCD86F00BC8FCA /* YXLogCell.xib */,
 			);
 			path = YXLog;
 			sourceTree = "<group>";
@@ -147,6 +153,7 @@
 				9B339F6325FCC0D700BC8FCA /* YXLogView.xib in Resources */,
 				9B339F4925FCB9C200BC8FCA /* LaunchScreen.storyboard in Resources */,
 				9B339F4625FCB9C200BC8FCA /* Assets.xcassets in Resources */,
+				9B339F7425FCD86F00BC8FCA /* YXLogCell.xib in Resources */,
 				9B339F4425FCB9C000BC8FCA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,6 +171,7 @@
 				9B339F3D25FCB9C000BC8FCA /* AppDelegate.swift in Sources */,
 				9B339F6A25FCC88100BC8FCA /* YXMoveView.swift in Sources */,
 				9B339F5725FCBA4500BC8FCA /* YXLog.swift in Sources */,
+				9B339F7325FCD86F00BC8FCA /* YXLogCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

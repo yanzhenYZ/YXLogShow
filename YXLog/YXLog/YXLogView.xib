@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -48,17 +47,29 @@
                         <constraint firstAttribute="bottom" secondItem="249-4z-QMm" secondAttribute="bottom" id="gu1-BF-0mc"/>
                     </constraints>
                 </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4U5-DS-v97">
+                    <rect key="frame" x="0.0" y="44" width="345" height="326"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="kRv-7x-0FM"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="v7K-1l-IYZ"/>
+                    </connections>
+                </tableView>
             </subviews>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemGray2Color"/>
             <constraints>
+                <constraint firstItem="4U5-DS-v97" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" constant="-30" id="B8c-m5-3b4"/>
                 <constraint firstItem="AmD-61-6Es" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="DjE-UJ-O51"/>
                 <constraint firstItem="AmD-61-6Es" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="UEM-lo-TAG"/>
+                <constraint firstItem="4U5-DS-v97" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" constant="-30" id="UVJ-P1-xKg"/>
                 <constraint firstAttribute="trailing" secondItem="AmD-61-6Es" secondAttribute="trailing" id="ZiA-Zw-XzE"/>
+                <constraint firstItem="4U5-DS-v97" firstAttribute="top" secondItem="AmD-61-6Es" secondAttribute="bottom" id="dbH-yY-OiK"/>
+                <constraint firstItem="4U5-DS-v97" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="zHD-Yu-6ng"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="segment" destination="L59-l1-SYt" id="mxa-a6-Rpy"/>
+                <outlet property="tableView" destination="4U5-DS-v97" id="EoK-n5-slK"/>
             </connections>
             <point key="canvasLocation" x="138.40579710144928" y="84.375"/>
         </view>

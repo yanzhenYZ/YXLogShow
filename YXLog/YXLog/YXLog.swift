@@ -36,7 +36,7 @@ class YXLog: NSObject {
         }
         
         logView = Bundle.main.loadNibNamed("YXLogView", owner: nil, options: nil)?.first as? YXLogView
-        logView.frame = CGRect(x: 0, y: 0, width: 270, height: 360)
+        logView.frame = CGRect(x: 30, y: 64, width: 270, height: 360)
         logView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         logView.layer.cornerRadius = 5
         logView.backgroundColor = .gray
@@ -60,7 +60,7 @@ extension YXLog {
         moveView.removeFromSuperview()
     }
     
-    func dismiss() {
-        logView.removeFromSuperview()
+    func addLog(_ log: String, color: UIColor = .blue) {
+        logView.addLog("123")
     }
 }

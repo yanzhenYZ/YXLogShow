@@ -24,7 +24,9 @@ class ViewController: UIViewController {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
+        for i in 0...20 {
+            YXLog.log.addLog("1234 // Do any additional setup after loading the view. // Do any additional setup after loading the view.")
+        }
     }
 }
 

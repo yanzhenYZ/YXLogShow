@@ -15,7 +15,7 @@ class YXLog: NSObject {
     private weak var superView: UIView?
     private override init() {
         super.init()
-        moveView = YXLogMoveView(frame: CGRect(x: 10, y: 10, width: 65, height: 65))
+        moveView = YXLogMoveView(frame: CGRect(x: 10, y: 10, width: 60, height: 60))
         moveView.backgroundColor = .gray
         
         NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "YXMOVEVIEWACTION"), object: nil, queue: .main) { [weak self] (note) in
@@ -61,6 +61,6 @@ extension YXLog {
     }
     
     func addLog(_ log: String, color: UIColor = .blue) {
-        logView.addLog("123")
+        logView.addLog(log, color: color)
     }
 }

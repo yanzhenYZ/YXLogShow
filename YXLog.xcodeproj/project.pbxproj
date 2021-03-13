@@ -85,10 +85,10 @@
 				9B339F5625FCBA4500BC8FCA /* YXLog.swift */,
 				9B339F5C25FCBCFB00BC8FCA /* YXLogView.swift */,
 				9B339F6225FCC0D700BC8FCA /* YXLogView.xib */,
-				9B339F6925FCC88100BC8FCA /* YXMoveView.swift */,
-				9B339F5F25FCBEE800BC8FCA /* YXLogMoveView.swift */,
 				9B339F7125FCD86F00BC8FCA /* YXLogCell.swift */,
 				9B339F7225FCD86F00BC8FCA /* YXLogCell.xib */,
+				9B339F6925FCC88100BC8FCA /* YXMoveView.swift */,
+				9B339F5F25FCBEE800BC8FCA /* YXLogMoveView.swift */,
 			);
 			path = YXLog;
 			sourceTree = "<group>";

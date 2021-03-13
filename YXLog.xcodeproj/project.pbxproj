@@ -16,6 +16,7 @@
 		9B339F5D25FCBCFB00BC8FCA /* YXLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B339F5C25FCBCFB00BC8FCA /* YXLogView.swift */; };
 		9B339F6025FCBEE800BC8FCA /* YXLogMoveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B339F5F25FCBEE800BC8FCA /* YXLogMoveView.swift */; };
 		9B339F6325FCC0D700BC8FCA /* YXLogView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B339F6225FCC0D700BC8FCA /* YXLogView.xib */; };
+		9B339F6A25FCC88100BC8FCA /* YXMoveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B339F6925FCC88100BC8FCA /* YXMoveView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		9B339F5C25FCBCFB00BC8FCA /* YXLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXLogView.swift; sourceTree = "<group>"; };
 		9B339F5F25FCBEE800BC8FCA /* YXLogMoveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXLogMoveView.swift; sourceTree = "<group>"; };
 		9B339F6225FCC0D700BC8FCA /* YXLogView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YXLogView.xib; sourceTree = "<group>"; };
+		9B339F6925FCC88100BC8FCA /* YXMoveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXMoveView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				9B339F5625FCBA4500BC8FCA /* YXLog.swift */,
 				9B339F5C25FCBCFB00BC8FCA /* YXLogView.swift */,
 				9B339F6225FCC0D700BC8FCA /* YXLogView.xib */,
+				9B339F6925FCC88100BC8FCA /* YXMoveView.swift */,
 				9B339F5F25FCBEE800BC8FCA /* YXLogMoveView.swift */,
 			);
 			path = YXLog;
@@ -159,6 +162,7 @@
 				9B339F6025FCBEE800BC8FCA /* YXLogMoveView.swift in Sources */,
 				9B339F4125FCB9C000BC8FCA /* ViewController.swift in Sources */,
 				9B339F3D25FCB9C000BC8FCA /* AppDelegate.swift in Sources */,
+				9B339F6A25FCC88100BC8FCA /* YXMoveView.swift in Sources */,
 				9B339F5725FCBA4500BC8FCA /* YXLog.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,5 +1,5 @@
 //
-//  YXLogMoveView.swift
+//  YXMoveView.swift
 //  YXLog
 //
 //  Created by yanzhen on 2021/3/13.
@@ -7,26 +7,11 @@
 
 import UIKit
 
-class YXLogMoveView: UILabel {
+class YXMoveView: UIView {
 
     private var beginPoint = CGPoint.zero
     override init(frame: CGRect) {
         super.init(frame: frame)
-        isUserInteractionEnabled = true
-        layer.masksToBounds = true
-        layer.cornerRadius = 5
-        backgroundColor = UIColor.gray
-        font = .systemFont(ofSize: 20)
-        textAlignment = .center
-        textColor = .white
-        text = "LOG"
-        
-        let tap = UITapGestureRecognizer(target: self, action: #selector(settingAction))
-        addGestureRecognizer(tap)
-    }
-    
-    @objc private func settingAction() {
-        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "YXMOVEVIEWACTION"), object: nil, userInfo: nil)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -72,4 +57,5 @@ class YXLogMoveView: UILabel {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+
 }

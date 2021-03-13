@@ -7,7 +7,7 @@
 
 import UIKit
 
-class YXLogView: YXLogMoveView {
+class YXLogView: YXMoveView {
     
 
 }

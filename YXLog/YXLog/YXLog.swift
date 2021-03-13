@@ -14,10 +14,22 @@ class YXLog: NSObject {
     private var moveView: YXLogMoveView!
     private weak var superView: UIView?
     private override init() {
+        super.init()
         moveView = YXLogMoveView(frame: CGRect(x: 10, y: 10, width: 65, height: 65))
         moveView.backgroundColor = .gray
         
-        logView = YXLogView(frame: .zero)
+        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "YXMOVEVIEWACTION"), object: nil, queue: .main) { [weak self] (note) in
+            guard let self = self else { return }
+            if self.logView.superview != nil {
+                self.logView.removeFromSuperview()
+                self.moveView.isHidden = false
+            } else {
+                self.moveView.isHidden = true
+                self.superView?.addSubview(self.logView)
+            }
+        }
+        
+        logView = YXLogView(frame: .init(x: 0, y: 0, width: 240, height: 320))
         logView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         logView.layer.cornerRadius = 5
         logView.backgroundColor = .gray
